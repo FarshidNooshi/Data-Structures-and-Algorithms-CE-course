@@ -15,6 +15,11 @@ public:
 		trafic = 0;
 	}
 
+	Edge(Point src, Point target) {
+		this->length = src.CalculateDistance(target);
+		trafic = 0;
+	}
+
 };
 
 class Point {
@@ -23,7 +28,8 @@ public:
 	int x;
 	int y;
 
-	Point(int x, int y) {
+	Point(int id, int x, int y) {
+		this->id = id;
 		this->x = x;
 		this->y = y;
 	}
