@@ -3,10 +3,6 @@
 
 #include <bits/stdc++.h>
 
-#include "GraphStructures.h"
-#include "IOClassDeclarations.h"
-#include "Analyser.h"
-#include "Dijkstra.h"
 
 using namespace std;
 

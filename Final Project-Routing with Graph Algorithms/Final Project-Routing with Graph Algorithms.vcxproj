@@ -142,6 +142,11 @@
   <ItemGroup>
     <ClCompile Include="Final Project-Routing with Graph Algorithms.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphStructures.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="IOClassDeclarations.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
