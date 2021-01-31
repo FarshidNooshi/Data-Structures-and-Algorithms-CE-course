@@ -4,7 +4,7 @@ class Edge {
 public: 
 	int trafic;
 	double length;
-	static const double traficFactor = 0.3;
+	static const double traficFactor;
 
 	double Weight() {
 		return length * (1.0 + trafic * traficFactor);
@@ -21,6 +21,8 @@ public:
 	}
 
 };
+
+const double Edge::traficFactor = 0.3;
 
 class Point {
 public:
@@ -39,4 +41,10 @@ public:
 		int dy = this->y - target.y;
 		return sqrt(dx * dx + dy * dy);
 	}
+};
+
+class Graph {
+public:
+	unordered_map<int, int> idHashMap;
+
 };

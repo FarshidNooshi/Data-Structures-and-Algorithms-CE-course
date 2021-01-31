@@ -24,4 +24,5 @@ public:
 			edgeIds.push_back({ idSource, idTarget });
 		}
 	}
+
 };
