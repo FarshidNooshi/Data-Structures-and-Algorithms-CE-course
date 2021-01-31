@@ -8,6 +8,6 @@ using namespace std;
 int32_t main() {
 
 
-    cout << "TEST\n";
+    cout << "TEST\n\n";
     return false;
 }
