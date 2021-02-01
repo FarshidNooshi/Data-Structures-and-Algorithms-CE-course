@@ -7,12 +7,12 @@ using namespace std;
 class Dijkstra {
 	Graph graph;
 
-	void FillResult(unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
+	void FillResult(Point& src, unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
 
 public:
 
-	vector<Point> result;
-	double timeRequiredForTraveling;
+	vector<Edge> result;
+	double timeRequiredForTraveling = 0.0;
 
 	Graph GetGraph() { 
 		return this->graph;

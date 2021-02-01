@@ -4,9 +4,9 @@ class Query {
 public:
     int src;
     int dst;
-    int tme;
+    double tme;
 
-    Query(int tme, int src, int dst) {
+    Query(double tme, int src, int dst) {
         this->src = src;
         this->dst = dst;
         this->tme = tme;

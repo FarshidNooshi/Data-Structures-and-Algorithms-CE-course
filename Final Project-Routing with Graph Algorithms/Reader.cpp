@@ -18,7 +18,8 @@ void Reader::ReadMap() {
 }
 
 void Reader::ReadQueries() {
-	int tme, src, dst;
+	double tme;
+	int src, dst;
 	vector<Query> vec;
 	while (cin >> tme >> src >> dst) {
 		vec.push_back({ tme, src, dst });
