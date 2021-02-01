@@ -3,10 +3,10 @@
 class Point {
 public:
 	int id;
-	int x;
-	int y;
+	double x;
+	double y;
 
-	Point(int id, int x, int y) {
+	Point(int id, double x, double y) {
 		this->id = id;
 		this->x = x;
 		this->y = y;

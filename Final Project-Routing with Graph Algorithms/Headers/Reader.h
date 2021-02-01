@@ -12,9 +12,7 @@ public:
 	vector<pair<int, int>> edgeIds;
 	queue<Query> queries;
 	
-	Reader() {
-		ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL);
-	}
+	Reader() = default;
 
 
 	int numberOfPoints = 0;

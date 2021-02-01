@@ -6,7 +6,8 @@ using namespace std;
 
 void Reader::ReadMap() {
 	cin >> numberOfPoints >> numberOfEdges;
-	for (int i = 0, id, x, y; i < numberOfPoints; i++) {
+	for (int i = 0, id; i < numberOfPoints; i++) {
+		double x, y;
 		cin >> id >> x >> y;
 		points.push_back({ id, x, y });
 	}

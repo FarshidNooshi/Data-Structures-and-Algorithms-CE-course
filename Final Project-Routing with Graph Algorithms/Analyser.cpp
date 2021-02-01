@@ -17,9 +17,9 @@ void Analyser::solve() {
 	priority_queue<pair<double, pair<Edge, int>>, vector<pair<double, pair<Edge, int>>>, decltype(compare)> pq;
 
 	while (!queries.empty()) {
-		auto item = queries.front();
+		auto &item = queries.front();
 		if (!pq.empty() && (-pq.top().first) < item.tme) {
-			auto it = pq.top();
+			auto &it = pq.top();
 			updateGraph(it.second.first.src, it.second.first.dst, it.second.second);
 			pq.pop();
 		}
@@ -27,7 +27,7 @@ void Analyser::solve() {
 			dijkstra.FindShortestPath(dijkstra.GetGraph().idToPoint[item.src], dijkstra.GetGraph().idToPoint[item.dst]);
 		//	analysedMap[item] = Answer(dijkstra.timeRequiredForTraveling, dijkstra.result);
 			double tme = item.tme;
-			for (auto edge : dijkstra.result) {
+			for (auto &edge : dijkstra.result) {
 				pq.push({ -tme, {edge, 1} });
 				{
 					Edge temp = Edge(edge.src, edge.dst);
