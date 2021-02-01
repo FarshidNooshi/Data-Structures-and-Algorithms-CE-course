@@ -1,15 +1,15 @@
 #pragma once
 
-#include "Point.h"
+#include "Edge.h"
 
 using namespace std;
 
 class Answer {
 public:
 	int timeElapsed;
-	vector<Point> path;
+	vector<Edge> path;
 
-	Answer(int tme, vector<Point> vec) {
+	Answer(int tme, vector<Edge> vec) {
 		timeElapsed = tme;
 		path = vec;
 	}

@@ -13,6 +13,7 @@
 #include "Headers/Graph.h"
 #include "Headers/Query.h"
 #include "Headers/Answer.h"
+#include "Headers/Writer.h"
 
 using namespace std;
 
@@ -20,6 +21,7 @@ int32_t main()
 {
     Reader reader;
     reader.ReadMap();
+    reader.ReadQueries();
     cout << "qweHello World!\n";
     return false;
 }
