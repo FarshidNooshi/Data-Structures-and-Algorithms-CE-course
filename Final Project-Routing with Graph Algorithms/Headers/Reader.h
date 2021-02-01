@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Point.h"
 
 using namespace std;

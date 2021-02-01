@@ -8,6 +8,7 @@
 #include "Headers/Edge.h"
 #include "Headers/Reader.h"
 #include "Headers/Point.h"
+#include "Headers/Dijkstra.h"
 
 using namespace std;
 

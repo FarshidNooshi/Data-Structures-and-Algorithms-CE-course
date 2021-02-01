@@ -12,5 +12,7 @@ public:
 		this->y = y;
 	}
 
+	Point() =  default;
+
 	double CalculateDistance(Point target);
 };

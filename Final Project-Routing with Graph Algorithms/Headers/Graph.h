@@ -11,7 +11,16 @@ class Graph {
 public:
 	unordered_map<int, Point> idToPoint;
 	unordered_map<int, vector<Edge>> adj;
+
+	int numberOfPoints;
+	int numberOfEdges;
+
+	Graph() = default;
+
 	Graph(vector<Point> points, vector<pair<int, int>> edges) {
+
+		numberOfPoints = points.size();
+		numberOfEdges = edges.size();
 
 		for (auto& point : points)
 			idToPoint[point.id] = point;

@@ -4,18 +4,17 @@
 
 class Edge {
 public:
+	Point src;
+	Point dst;
 	int trafic;
 	double length;
 	static const double traficFactor;
 
 	double Weight();
 
-	Edge(double length) {
-		this->length = length;
-		trafic = 0;
-	}
-
 	Edge(Point src, Point target) {
+		this->src = src;
+		this->dst = target;
 		this->length = src.CalculateDistance(target);
 		trafic = 0;
 	}
