@@ -16,6 +16,8 @@ public:
 		return this->graph;
 	}
 
+	Dijkstra() = default;
+
 	Dijkstra(Graph graph) {
 		this->graph = graph;
 	}

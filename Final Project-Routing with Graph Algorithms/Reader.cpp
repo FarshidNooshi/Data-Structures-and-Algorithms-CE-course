@@ -24,7 +24,9 @@ void Reader::ReadQueries() {
 		vec.push_back({ tme, src, dst });
 	}
 
-	sort(vec.begin(), vec.end());
+	sort(vec.begin(), vec.end(), [](Query& left, Query& right) {
+		return left.tme < right.tme;
+		});
 	for (auto& item : vec)
 		queries.push(item);
 }

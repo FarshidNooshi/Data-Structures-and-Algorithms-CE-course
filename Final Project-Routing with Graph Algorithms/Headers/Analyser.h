@@ -2,18 +2,7 @@
 
 #include "Dijkstra.h"
 #include "Graph.h"
-
-struct Query {
-    int src;
-    int dst;
-    int tme;
-
-    Query(int tme, int src, int dst) {
-        this->src = src;
-        this->dst = dst;
-        this->tme = tme;
-    }
-};
+#include "Query.h"
 
 class Analyser {
 	Dijkstra dijkstra;

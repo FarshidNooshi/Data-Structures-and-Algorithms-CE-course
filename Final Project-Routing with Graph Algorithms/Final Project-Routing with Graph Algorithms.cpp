@@ -9,6 +9,9 @@
 #include "Headers/Reader.h"
 #include "Headers/Point.h"
 #include "Headers/Dijkstra.h"
+#include "Headers/Analyser.h"
+#include "Headers/Graph.h"
+#include "Headers/Query.h"
 
 using namespace std;
 
