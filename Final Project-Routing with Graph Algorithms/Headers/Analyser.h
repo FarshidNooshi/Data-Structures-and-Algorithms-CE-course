@@ -18,7 +18,7 @@ class Analyser {
 
 public:
 
-	//map<Query, Answer> analysedMap;
+	map<Query, Answer> analysedMap;
 
 	Analyser() = default;
 
