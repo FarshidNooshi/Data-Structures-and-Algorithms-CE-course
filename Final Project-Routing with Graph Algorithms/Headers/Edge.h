@@ -1,5 +1,7 @@
 #pragma once
 
+#include <bits/stdc++.h>
+
 #include "Point.h"
 
 class Edge {
@@ -9,6 +11,8 @@ public:
 	int trafic;
 	double length;
 	static const double traficFactor;
+
+	Edge() = default;
 
 	double Weight();
 

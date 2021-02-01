@@ -21,8 +21,18 @@ void Reader::ReadQueries() {
 	double tme;
 	int src, dst;
 	vector<Query> vec;
-	while (cin >> tme >> src >> dst) {
+	cout << "enter number of queries:\n";
+
+	/*while (cin >> tme >> src >> dst) {
 		vec.push_back({ tme, src, dst });
+	}*/
+
+	{
+		int temp;	cin >> temp;
+		while (temp--) {
+			cin >> tme >> src >> dst;
+			vec.push_back({ tme, src, dst });
+		}
 	}
 
 	sort(vec.begin(), vec.end(), [](Query& left, Query& right) {

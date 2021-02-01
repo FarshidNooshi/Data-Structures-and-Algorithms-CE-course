@@ -144,17 +144,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Analyser.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="Final Project-Routing with Graph Algorithms.cpp" />
-    <ClCompile Include="Graph.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Writer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Edge.h" />
-    <ClInclude Include="Graph.h" />
-    <ClInclude Include="Reader.h" />
-    <ClInclude Include="Point.h" />
+    <ClInclude Include="Headers\Analyser.h" />
+    <ClInclude Include="Headers\Answer.h" />
+    <ClInclude Include="Headers\Dijkstra.h" />
+    <ClInclude Include="Headers\Edge.h" />
+    <ClInclude Include="Headers\Graph.h" />
+    <ClInclude Include="Headers\Point.h" />
+    <ClInclude Include="Headers\Query.h" />
+    <ClInclude Include="Headers\Reader.h" />
+    <ClInclude Include="Headers\Writer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,4 +11,8 @@ public:
         this->dst = dst;
         this->tme = tme;
     }
+
+    bool operator <(const Query& query) const {
+        return this->tme < query.tme;
+    }
 };

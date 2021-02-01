@@ -55,7 +55,7 @@ void Dijkstra::FillResult(Point& src, unordered_map<int, bool>& mark, Point& tar
 	Edge edge = par[f];
 	while (f != src.id) {
 		edge = par[f];
-		f = edge.src;
+		f = edge.src.id;
 		result.push_back(edge);
 	}
 	reverse(result.begin(), result.end());

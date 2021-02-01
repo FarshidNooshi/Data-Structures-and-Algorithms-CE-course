@@ -23,8 +23,8 @@ int32_t main()
     reader.ReadMap();
     reader.ReadQueries();
     Graph graph = Graph(reader.points, reader.edgeIds);
-    Analyser analyser = Analyser(graph);
-    analyser.solve(reader.queries);
+    Analyser analyser = Analyser(graph, reader.queries);
+    analyser.solve();
     Writer writer = Writer(analyser.analysedMap);
     return false;
 }

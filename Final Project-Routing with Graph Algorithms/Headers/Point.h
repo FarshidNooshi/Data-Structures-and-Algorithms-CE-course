@@ -12,6 +12,11 @@ public:
 		this->y = y;
 	}
 
+	bool operator==(const Point& point) const{
+		return this->x == point.x &&
+			this->y == point.y;
+	}
+
 	Point() =  default;
 
 	double CalculateDistance(Point target);

@@ -12,8 +12,8 @@ public:
 	unordered_map<int, Point> idToPoint;
 	unordered_map<int, vector<Edge>> adj;
 
-	int numberOfPoints;
-	int numberOfEdges;
+	int numberOfPoints = 0;
+	int numberOfEdges = 0;
 
 	Graph() = default;
 

@@ -1,13 +1,19 @@
 #pragma once
 
+#include <unordered_map>
+
+#include <bits/stdc++.h>
+
 #include "Graph.h"
+#include "Point.h"
+#include "Edge.h"
 
 using namespace std;
 
 class Dijkstra {
 	Graph graph;
 
-	void FillResult(Point& src, unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
+	void FillResult(Point& src, unordered_map<int, bool>& mark, Point& target, unordered_map<int, Edge>& par);
 
 public:
 
