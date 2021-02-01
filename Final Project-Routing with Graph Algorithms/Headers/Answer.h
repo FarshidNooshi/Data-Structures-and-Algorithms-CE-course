@@ -8,12 +8,12 @@ using namespace std;
 
 class Answer {
 public:
-	int timeElapsed;
+	double timeElapsed;
 	vector<Edge> path;
 
 	Answer() = default;
 
-	Answer(int tme, vector<Edge> vec) {
+	Answer(double tme, vector<Edge> vec) {
 		timeElapsed = tme;
 		path = vec;
 	}

@@ -25,7 +25,7 @@ void Analyser::solve() {
 		}
 		else {
 			dijkstra.FindShortestPath(dijkstra.GetGraph().idToPoint[item.src], dijkstra.GetGraph().idToPoint[item.dst]);
-		//	analysedMap[item] = Answer(dijkstra.timeRequiredForTraveling, dijkstra.result);
+			analysedMap[item] = Answer(dijkstra.timeRequiredForTraveling, dijkstra.result);
 			double tme = item.tme;
 			for (auto &edge : dijkstra.result) {
 				pq.push({ -tme, {edge, 1} });

@@ -26,5 +26,6 @@ int32_t main()
     Analyser analyser = Analyser(graph, reader.queries);
     analyser.solve();
     Writer writer = Writer(analyser.analysedMap);
+    writer.WriteAnswers();
     return false;
 }

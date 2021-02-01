@@ -27,6 +27,7 @@ public:
 
 		for (int i = 0; i < edges.size(); i++) {
 			adj[edges[i].first].push_back({ idToPoint[edges[i].first], idToPoint[edges[i].second] });
+			adj[edges[i].second].push_back({ idToPoint[edges[i].second], idToPoint[edges[i].first] });
 		}
 	}
 };

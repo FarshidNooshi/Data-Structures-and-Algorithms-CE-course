@@ -22,6 +22,9 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 	unordered_map<int, Edge> par;
 	priority_queue<pair<double, int>, vector<pair<double, int>>, less<pair<double, int>>> pq;
 
+	for (auto &u : graph.idToPoint)
+		dis[u.first] = 10000000.0;
+
 	dis[src.id] = 0;
 	pq.push({ 0, src.id });
 	
@@ -33,6 +36,7 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 		mark[v] = true;
 		for (auto& edge : graph.adj[v]) {
 			if (smin(dis[edge.dst.id], dis[v] + edge.Weight())) {
+				dis[edge.dst.id] = dis[v] + edge.Weight();
 				par[edge.dst.id] = edge;
 				pq.push({ dis[edge.dst.id], edge.dst.id });
 			}
@@ -48,9 +52,7 @@ void Dijkstra::FillResult(Point& src, unordered_map<int, bool>& mark, Point& tar
 	if (!mark[target.id]) {
 		throw "no root from requested nodes.";
 	}
-
 	result.clear();
-
 	int f = target.id;
 	Edge edge = par[f];
 	while (f != src.id) {
