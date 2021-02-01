@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Point.h"
+#include "Analyser.h"
 
 using namespace std;
 
@@ -12,9 +13,12 @@ public:
 
 	vector<Point> points;
 	vector<pair<int, int>> edgeIds;
+	queue<Query> queries;
 
 	int numberOfPoints = 0;
 	int numberOfEdges = 0;
 
 	void ReadMap();
+	
+	void ReadQueries();
 };

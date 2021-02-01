@@ -16,3 +16,15 @@ void Reader::ReadMap() {
 		edgeIds.push_back({ idSource, idTarget });
 	}
 }
+
+void Reader::ReadQueries() {
+	int tme, src, dst;
+	vector<Query> vec;
+	while (cin >> tme >> src >> dst) {
+		vec.push_back({ tme, src, dst });
+	}
+
+	sort(vec.begin(), vec.end());
+	for (auto& item : vec)
+		queries.push(item);
+}
