@@ -16,5 +16,6 @@ int32_t main()
 {
     Reader reader;
     reader.ReadMap();
-    cout << "Hello World!\n";
+    cout << "qweHello World!\n";
+    return false;
 }

@@ -9,7 +9,8 @@ class Dijkstra {
 
 public:
 
-	vector<Edge> result;
+	vector<Point> result;
+	double timeRequiredForTraveling;
 
 	Graph GetGraph() { 
 		return this->graph;
@@ -20,4 +21,5 @@ public:
 	}
 
 	void FindShortestPath(Point src, Point target);
+	void FillResult(unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
 };
