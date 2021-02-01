@@ -22,6 +22,9 @@ int32_t main()
     Reader reader;
     reader.ReadMap();
     reader.ReadQueries();
-    cout << "qweHello World!\n";
+    Graph graph = Graph(reader.points, reader.edgeIds);
+    Analyser analyser = Analyser(graph);
+    analyser.solve(reader.queries);
+    Writer writer = Writer(analyser.analysedMap);
     return false;
 }
