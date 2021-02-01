@@ -1,11 +1,13 @@
 #pragma once
 
-#include "Headers/Graph.h"
+#include "Graph.h"
 
 using namespace std;
 
 class Dijkstra {
 	Graph graph;
+
+	void FillResult(unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
 
 public:
 
@@ -23,5 +25,4 @@ public:
 	}
 
 	void FindShortestPath(Point src, Point target);
-	void FillResult(unordered_map<int, bool>& mark, Point& target, unordered_map<int, int>& par);
 };

@@ -12,6 +12,7 @@
 #include "Headers/Analyser.h"
 #include "Headers/Graph.h"
 #include "Headers/Query.h"
+#include "Headers/Answer.h"
 
 using namespace std;
 

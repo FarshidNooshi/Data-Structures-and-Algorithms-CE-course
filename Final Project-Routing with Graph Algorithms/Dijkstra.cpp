@@ -51,6 +51,8 @@ void Dijkstra::FillResult(unordered_map<int, bool>& mark, Point& target, unorder
 		throw "no root from requested nodes.";
 	}
 
+	result.clear();
+
 	int f = target.id;
 	while (f != -1) {
 		result.push_back(f);
