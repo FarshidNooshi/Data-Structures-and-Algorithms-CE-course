@@ -20,7 +20,7 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 	unordered_map<int, bool> mark;
 	unordered_map<int, double> dis;
 	unordered_map<int, Edge> par;
-	priority_queue<pair<double, int>, vector<pair<double, int>>, less<pair<double, int>>> pq;
+	priority_queue<pair<double, int>> pq;
 
 	for (auto &u : graph.idToPoint)
 		dis[u.first] = 10000000.0;
@@ -36,9 +36,11 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 		mark[v] = true;
 		for (auto& edge : graph.adj[v]) {
 			if (smin(dis[edge.dst.id], dis[v] + edge.Weight())) {
+				if (v == 30 && edge.dst.id == 35)
+					cout << edge.Weight() << ' ' << dis[v] << '\n';
 				dis[edge.dst.id] = dis[v] + edge.Weight();
 				par[edge.dst.id] = edge;
-				pq.push({ dis[edge.dst.id], edge.dst.id });
+				pq.push({ -dis[edge.dst.id], edge.dst.id });
 			}
 		}
 	}

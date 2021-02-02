@@ -32,7 +32,7 @@ void Analyser::solve() {
 				{
 					Edge temp = Edge(edge.src, edge.dst);
 					temp.trafic = edge.trafic + 1;
-					tme += temp.Weight();
+					tme += 120.0 * temp.Weight();
 					pq.push({ -tme, {temp, -1} });
 				}
 			}
