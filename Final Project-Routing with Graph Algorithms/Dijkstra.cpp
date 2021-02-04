@@ -49,6 +49,17 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 	FillResult(src, mark, target, par);
 }
 
+
+void Dijkstra::UpdateGraph(Point src, Point dst, int val)
+{
+	for (Edge& edge : graph.adj[src.id])
+		if (edge.dst == dst) {
+			edge.trafic += val;
+			break;
+		}
+}
+
+
 void Dijkstra::FillResult(Point& src, unordered_map<int, bool>& mark, Point& target, unordered_map<int, Edge>& par)
 {
 	if (!mark[target.id]) {

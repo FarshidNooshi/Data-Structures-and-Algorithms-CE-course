@@ -30,5 +30,6 @@ public:
 		this->graph = graph;
 	}
 
+	void UpdateGraph(Point src, Point dst, int val);
 	void FindShortestPath(Point src, Point target);
 };

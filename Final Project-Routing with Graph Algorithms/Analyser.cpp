@@ -20,7 +20,7 @@ void Analyser::solve() {
 		auto &item = queries.front();
 		if (!pq.empty() && (-pq.top().first) < item.tme) {
 			auto &it = pq.top();
-			updateGraph(it.second.first.src, it.second.first.dst, it.second.second);
+			dijkstra.UpdateGraph(it.second.first.src, it.second.first.dst, it.second.second);
 			pq.pop();
 		}
 		else {
@@ -28,25 +28,15 @@ void Analyser::solve() {
 			analysedMap[item] = Answer(dijkstra.timeRequiredForTraveling, dijkstra.result);
 			double tme = item.tme;
 			for (auto &edge : dijkstra.result) {
-				pq.push({ -tme, {edge, 1} });
+				pq.push({ tme, {edge, 1} });
 				{
 					Edge temp = Edge(edge.src, edge.dst);
 					temp.trafic = edge.trafic + 1;
 					tme += 120.0 * temp.Weight();
-					pq.push({ -tme, {temp, -1} });
+					pq.push({ tme, {temp, -1} });
 				}
 			}
 			queries.pop();
 		}
 	}
-}
-
-void Analyser::updateGraph(Point src, Point dst, int val)
-{
-	auto graph = dijkstra.GetGraph();
-	for (Edge& edge : graph.adj[src.id])
-		if (edge.dst == dst) {
-			edge.trafic += val;
-			break;
-		}
 }

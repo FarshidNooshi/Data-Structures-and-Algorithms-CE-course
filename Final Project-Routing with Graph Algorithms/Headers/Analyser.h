@@ -28,5 +28,4 @@ public:
 	}
 
 	void solve();
-	void updateGraph(Point src, Point dst, int val);
 };
