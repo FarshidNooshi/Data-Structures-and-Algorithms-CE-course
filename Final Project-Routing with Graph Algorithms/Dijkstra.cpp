@@ -36,8 +36,6 @@ void Dijkstra::FindShortestPath(Point src, Point target) {
 		mark[v] = true;
 		for (auto& edge : graph.adj[v]) {
 			if (smin(dis[edge.dst.id], dis[v] + edge.Weight())) {
-				if (v == 30 && edge.dst.id == 35)
-					cout << edge.Weight() << ' ' << dis[v] << '\n';
 				dis[edge.dst.id] = dis[v] + edge.Weight();
 				par[edge.dst.id] = edge;
 				pq.push({ -dis[edge.dst.id], edge.dst.id });
