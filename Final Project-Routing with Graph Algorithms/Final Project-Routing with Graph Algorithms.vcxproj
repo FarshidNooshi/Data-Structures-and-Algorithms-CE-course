@@ -144,13 +144,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Analyser.cpp" />
-    <ClCompile Include="Dijkstra.cpp" />
-    <ClCompile Include="Edge.cpp" />
-    <ClCompile Include="Final Project-Routing with Graph Algorithms.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Reader.cpp" />
-    <ClCompile Include="Writer.cpp" />
+    <ClCompile Include="Implementations\Analyser.cpp" />
+    <ClCompile Include="Implementations\Dijkstra.cpp" />
+    <ClCompile Include="Implementations\Edge.cpp" />
+    <ClCompile Include="Implementations\Final Project-Routing with Graph Algorithms.cpp" />
+    <ClCompile Include="Implementations\Point.cpp" />
+    <ClCompile Include="Implementations\Reader.cpp" />
+    <ClCompile Include="Implementations\Writer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Analyser.h" />

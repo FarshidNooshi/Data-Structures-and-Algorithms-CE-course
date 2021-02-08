@@ -15,25 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Final Project-Routing with Graph Algorithms.cpp">
+    <ClCompile Include="Implementations\Analyser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Point.cpp">
+    <ClCompile Include="Implementations\Dijkstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Edge.cpp">
+    <ClCompile Include="Implementations\Edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Reader.cpp">
+    <ClCompile Include="Implementations\Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Analyser.cpp">
+    <ClCompile Include="Implementations\Reader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dijkstra.cpp">
+    <ClCompile Include="Implementations\Writer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Writer.cpp">
+    <ClCompile Include="Implementations\Final Project-Routing with Graph Algorithms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
