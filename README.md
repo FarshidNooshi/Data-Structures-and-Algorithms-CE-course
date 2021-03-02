@@ -34,8 +34,15 @@ Data Structures and Algorithms assignments and Course Projects at Amirkabir univ
   BST. For the last problem, I traced the add and removal from the RB tree step by step alongside telling which type of rotation was used for that step.
 
 ## Forth Assignment
-  the last assignment before our final exam was this homework. the base disscussion of this homework was mostly about graph algorithms and dynamic programming.
-  The first problem of this assignment was a dynamic programming problem with BFS. Second problem was an implementation problem because of mostly using HashMaps
-  the third problem was also a dynamic programming question in a table, the Fourth problem was mostly a logical problem, it was easy to implement but you should firstly 
-  think about your approach of solving this problem. The last question of our homeworks was about finding the necessary distances with DFS, I think it was the most 
-  challenging problem of this assignment, I'm happy that I solved this question without problem.
+  the last assignment before our final exam was this homework. the base discussion of this homework was mostly about graph algorithms and dynamic programming. The first  
+  problem of this assignment was a dynamic programming problem with BFS. The second problem was an implementation problem because of mostly using HashMaps the third problem 
+  was also a dynamic programming question in a table, the Fourth problem was mostly logical, it was easy to implement but you should firstly think about your approach of 
+  solving this problem. The last question of our homework was about finding the necessary distances with DFS, I think it was the most challenging problem of this assignment, 
+  I'm happy that I solved this question without a big problem.
+  
+## Final Project
+  Last but not least it was our final project. It is a routing project for finding the shortest path from one point to another point in a given city map, with updating the 
+  traffics of the roads when users are traveling on their road. when a user sends a query to the program that he wants the shortest path from point A to point B the program 
+  gives him the shortest path at the current map and while the user is traveling in the route given from point A to point B the program will update the traffic of the roads 
+  to give the next users appropriate shortest paths based on the knowledge of the traffics and the time that will take for a person to pass a road with other users inside it. 
+  for this problem, I used OOP with C++ and implemented a Dijkstra algorithm. I hope you enjoy it.
