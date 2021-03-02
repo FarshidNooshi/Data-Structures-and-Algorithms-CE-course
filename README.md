@@ -2,6 +2,7 @@
 Data Structures and Algorithms assignments and Course Projects at Amirkabir university of Technology-Tehran Polytechnic
 
 ## Table of contents
+- [Overview](#Overview)
 - [First Assignment](#First-Assignment)
 - [Second Assignment](#Second-Assignment)
 - [Third Assignment](#Third-Assignment)
@@ -33,4 +34,8 @@ Data Structures and Algorithms assignments and Course Projects at Amirkabir univ
   BST. For the last problem, I traced the add and removal from the RB tree step by step alongside telling which type of rotation was used for that step.
 
 ## Forth Assignment
-  
+  the last assignment before our final exam was this homework. the base disscussion of this homework was mostly about graph algorithms and dynamic programming.
+  The first problem of this assignment was a dynamic programming problem with BFS. Second problem was an implementation problem because of mostly using HashMaps
+  the third problem was also a dynamic programming question in a table, the Fourth problem was mostly a logical problem, it was easy to implement but you should firstly 
+  think about your approach of solving this problem. The last question of our homeworks was about finding the necessary distances with DFS, I think it was the most 
+  challenging problem of this assignment, I'm happy that I solved this question without problem.
