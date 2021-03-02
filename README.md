@@ -18,14 +18,19 @@ Data Structures and Algorithms assignments and Course Projects at Amirkabir univ
   two-pointers and induction. for the last problem, we compared 10 couple of functions for their order of growth.
 
 ## Second Assignment 
-  The Second Assignment is the first coding homework that we had in this course. for having the same language for the whole course I used C++ for implementing all of the given 
-  coding problems. for the first problem of this assignment I used an exciting approach for using the input streams and also we used stack for solving the first problem, this 
-  assignment was mostly for using different data structures because we were taught about them in the previous weeks. the second problem got easy when I used stacks in it, 
-  without pre-defined stacks in C++ I should declare a Stack class using other data structures like arrays, this problem was an implementation problem with stack to giving us 
-  some ideas of usage of stacks in this kind of problems. The third problem was a little bit more challenging compared to the last two problems because, it needed more code and 
-  think, although it was also another implementing problem in my opinion this was the most complex problem of the assignment, It gave me happiness that I solved this problem in 
-  a short time like others too. The fourth problem got solved by reversing the vector and it doesn't have more to say. last but not least the fifth problem was an 
-  implementation of a doubly directed linked list with several functions.
+  The Second Assignment is the first coding homework that we had in this course. for having the same language for the whole course I used C++ for implementing all of the 
+  given coding problems. for the first problem of this assignment I used an exciting approach for using the input streams and also we used stack for solving the first 
+  problem, this assignment was mostly for using different data structures because we were taught about them in the previous weeks. the second problem got easy when I used 
+  stacks in it, without pre-defined stacks in C++ I should declare a Stack class using other data structures like arrays, this problem was an implementation problem with 
+  stack to giving us some ideas of usage of stacks in this kind of problems. The third problem was a little bit more challenging compared to the last two problems because, it 
+  needed more code and thinking, although it was also another implementing problem in my opinion this was the most complex problem of the assignment, It gave me happiness 
+  that I solved this problem in a short time like others too. The fourth problem got solved by reversing the vector and it doesn't have more to say. last but not least the 
+  fifth problem was an implementation of a doubly directed linked list with several functions.
 
 ## Third Assignment
+  For this Assignment we discussed mostly tree-based data structures like heap and Red-Black trees(RB tree), we solved some problems about rotation moves in RB trees.
+  gave basic pseudo-codes about inorder, postorder, preorder in binary search trees, wrote a simple DFS for traversing in trees like checking if a binary tree is or isn't a 
+  BST. For the last problem, I traced the add and removal from the RB tree step by step alongside telling which type of rotation was used for that step.
+
+## Forth Assignment
   
