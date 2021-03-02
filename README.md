@@ -1,4 +1,4 @@
-# Data-Structures-and-Algorithms-CE-course
+# Data-Structures-and-Algorithms-Computer Engineering-course
 
 ## Table of contents
 - [Overview](#Overview)
