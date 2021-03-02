@@ -33,7 +33,7 @@ Data Structures and Algorithms assignments and Course Projects at Amirkabir univ
   gave basic pseudo-codes about inorder, postorder, preorder in binary search trees, wrote a simple DFS for traversing in trees like checking if a binary tree is or isn't a 
   BST. For the last problem, I traced the add and removal from the RB tree step by step alongside telling which type of rotation was used for that step.
 
-## Forth Assignment
+## Fourth Assignment
   the last assignment before our final exam was this homework. the base discussion of this homework was mostly about graph algorithms and dynamic programming. The first  
   problem of this assignment was a dynamic programming problem with BFS. The second problem was an implementation problem because of mostly using HashMaps the third problem 
   was also a dynamic programming question in a table, the Fourth problem was mostly logical, it was easy to implement but you should firstly think about your approach of 
