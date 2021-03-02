@@ -1,5 +1,4 @@
 # Data-Structures-and-Algorithms-CE-course
-Data Structures and Algorithms assignments and Course Projects at Amirkabir university of Technology-Tehran Polytechnic
 
 ## Table of contents
 - [Overview](#Overview)
@@ -10,9 +9,10 @@ Data Structures and Algorithms assignments and Course Projects at Amirkabir univ
 - [Final Project](#Final-Project)
 
 ## Overview
-  This repository contains my homework and the final project of the Data structure and algorithms course taught by Prof. Bagheri at the Amirkabir University of Technology.
-  It was a privilege for me to have this class with him. We do have 4 homework and 1 final project. all of the solutions and files that have been uploaded here are correct and 
-  got full scores from the system tests, you can send me a message if you found a problem or question about the solutions, I'll be happy to respond.
+  This repository contains my homework and the final project of the Data structure and algorithms course taught by Prof. Bagheri 
+  at the Amirkabir University of Technology- Tehran Polytechnic.
+  It was a privilege for me to have this class with him. We do have 4 homework and 1 final project. all of the solutions and files that have been uploaded here are correct 
+  and got full scores from the system tests, you can send me a message if you found a problem or question about the solutions, I'll be happy to respond.
 
 ## First Assignment
   basically, the first assignment was for analyzing the running time and complexity of some simple algorithms such as insertion sort. problems being solved by approaches like 
